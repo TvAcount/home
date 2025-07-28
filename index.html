@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FILM BOX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white font-sans">
+    <!-- Header -->
+    <header
+      class="flex items-center justify-between px-4 py-2 bg-black sticky top-0 z-50"
+    >
+      <div class="flex items-center space-x-2">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOD8R5XxkUbNOWgnbYx3Dbj1OK5Els5ya9YeU_vzRXEQowr-9OEFNsFVfApJq-h6fWdExZf7c6Wd6ewhVTwLcrizq_NGfsM8KPG6i8AHmYkTxUmwH9pkuFN5-nBUV93bwQXt0aw3kYPqQsY0MFGTxC38o5DEVZ4qAsEz3ydbK9DQu4Pl4qNfS1Eyl9Vqo6/s1080/WhatsApp%20Image%202025-07-27%20at%205.12.14%20PM.jpeg"
+          alt="Logo FILM BOX"
+          class="w-10 h-10 rounded-full object-cover"
+        />
+        <h1 class="text-white text-lg font-semibold">FILM BOX</h1>
+      </div>
+     <nav class="flex items-center space-x-4 text-white text-xl">
+  <a aria-label="Inicio" class="hover:text-gray-400" href="https://example.com/inicio">
+    <i class="fas fa-home"></i>
+  </a>
+  <a aria-label="Buscar" class="hover:text-gray-400" href="https://example.com/buscar">
+    <i class="fas fa-search"></i>
+  </a>
+  <a aria-label="Opciones" class="hover:text-gray-400" href="https://example.com/opciones">
+    <i class="fas fa-ellipsis-v"></i>
+  </a>
+</nav>
+    </header>
+
+ <!-- HTML sin cambios -->
+<section id="dynamicHero" class="relative w-full overflow-hidden h-[60vh] md:h-[70vh]">
+  <!-- Se rellena por JS -->
+</section>
+
+<!-- Modal -->
+<div id="infoModal" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden">
+  <div class="bg-white text-black max-w-md w-full rounded-lg shadow-lg p-6 relative mx-4">
+    <button id="closeModal" class="absolute top-2 right-2 text-black hover:text-red-500 text-xl">&times;</button>
+    <h3 class="text-lg font-semibold mb-2">Sinopsis</h3>
+    <p id="modalDescription" class="text-sm leading-relaxed">
+      <!-- Se rellena dinámicamente -->
+    </p>
+  </div>
+</div>
+
+
+    <!-- Horizontal scroll logos -->
+    <section class="mt-2 px-2">
+      <div
+        class="flex space-x-2 overflow-x-auto scrollbar-hide py-2"
+        aria-label="Logos de servicios de streaming"
+      >
+        <img
+          class="flex-shrink-0 rounded w-24 h-14 object-cover"
+          src="https://storage.googleapis.com/a1aa/image/6b91df34-0292-4e65-74a6-b8194e0f0a14.jpg"
+          alt="Logo 1"
+        />
+        <img
+          class="flex-shrink-0 rounded w-24 h-14 object-cover"
+          src="https://storage.googleapis.com/a1aa/image/038b81b0-e4fa-4eff-fd6e-b2b04b1d7085.jpg"
+          alt="HBO Max"
+        />
+        <img
+          class="flex-shrink-0 rounded w-24 h-14 object-cover"
+          src="https://storage.googleapis.com/a1aa/image/aca2a4c9-b997-4115-c129-c2c76c1607d8.jpg"
+          alt="Disney Plus"
+        />
+        <img
+          class="flex-shrink-0 rounded w-24 h-14 object-cover"
+          src="https://storage.googleapis.com/a1aa/image/196e6509-e47e-4fa2-8eea-93276b72e680.jpg"
+          alt="Netflix"
+        />
+        <img
+          class="flex-shrink-0 rounded w-24 h-14 object-cover"
+          src="https://storage.googleapis.com/a1aa/image/c2a40e30-ad45-45ad-126f-1d5e87b19dcb.jpg"
+          alt="Star Plus"
+        />
+      </div>
+    </section>
+
+ <section class="px-4 mt-6">
+  <h2 class="text-white text-base font-normal mb-2">Lo recomendado para ti</h2>
+  <div class="flex overflow-x-auto space-x-3 scrollbar-hide pb-2">
+    <a href="__URL___" target="_blank" class="flex-shrink-0 w-48 md:w-64">
+      <img src="https://image.tmdb.org/t/p/original/1xDev1aS6juHOuhpOIKKlczEdrW.jpg" class="rounded-lg w-full object-cover aspect-video" alt="Poster recomendado 1" />
+    </a>
+    <a href="__URL___" target="_blank" class="flex-shrink-0 w-48 md:w-64">
+      <img src="https://image.tmdb.org/t/p/original/tTY2UT0zkqLfVL7QK9qLbmm9zw3.jpg" class="rounded-lg w-full object-cover aspect-video" alt="Poster recomendado 2" />
+    </a>
+    <a href="__URL___" target="_blank" class="flex-shrink-0 w-48 md:w-64">
+      <img src="https://image.tmdb.org/t/p/original/wqEtdSkAhJkqpRaKSqvqqWVvrL7.jpg" class="rounded-lg w-full object-cover aspect-video" alt="Poster recomendado 3" />
+    </a>
+  </div>
+</section>
+
+<section class="px-4 mt-6">
+  <h2 class="text-white text-base font-normal mb-2">Accion</h2>
+  <div class="flex overflow-x-auto space-x-3 scrollbar-hide pb-2">
+    <a href="__URL___" target="_blank" class="flex-shrink-0 w-48 md:w-64">
+      <img src="https://image.tmdb.org/t/p/original/8gkCeYF49PR1CCvNWaig2wyPMxz.jpg" class="rounded-lg w-full object-cover aspect-video" alt="Poster recomendado 1" />
+    </a>
+    <a href="__URL___" target="_blank" class="flex-shrink-0 w-48 md:w-64">
+      <img src="https://image.tmdb.org/t/p/original/tbrHi96loHtTyDX0H0EJktCvPxC.jpg" class="rounded-lg w-full object-cover aspect-video" alt="Poster recomendado 2" />
+    </a>
+    <a href="__URL___" target="_blank" class="flex-shrink-0 w-48 md:w-64">
+      <img src="https://image.tmdb.org/t/p/original/35uNaXPgIDD4pjMoAuZqAYI9gQj.jpg" class="rounded-lg w-full object-cover aspect-video" alt="Poster recomendado 3" />
+    </a>
+  </div>
+</section>
+<section class="px-4 mt-6">
+  <h2 class="text-white text-base font-normal mb-2">infantil</h2>
+  <div class="flex overflow-x-auto space-x-3 scrollbar-hide pb-2">
+    <a href="__URL___" target="_blank" class="flex-shrink-0 w-48 md:w-64">
+      <img src="https://mcswebsites.blob.core.windows.net/1011/Event_7458/landscape_large/kayara_820_360_facebook.jpg" class="rounded-lg w-full object-cover aspect-video" alt="Poster recomendado 1" />
+    </a>
+    <a href="__URL___" target="_blank" class="flex-shrink-0 w-48 md:w-64">
+      <img src="https://image.tmdb.org/t/p/original/5txS0YAciBoDywxEq7rX9QaXcSv.jpg" class="rounded-lg w-full object-cover aspect-video" alt="Poster recomendado 2" />
+    </a>
+    <a href="__URL___" target="_blank" class="flex-shrink-0 w-48 md:w-64">
+      <img src="https://image.tmdb.org/t/p/original/jC7I0BMII4nBu71YWf5PRB9aAmv.jpg" class="rounded-lg w-full object-cover aspect-video" alt="Poster recomendado 3" />
+    </a>
+  </div>
+</section>
+
+	<script>
+  // Lista de películas locales
+ var peliculas = [
+  {
+    titulo: "Cómo entrenar a tu dragón (2025)",
+    imagen: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9Zr7ZyiMpgMhhxJQi1tQJp9LGho.jpg",
+    descripcion: "En la escarpada isla de Mema, donde vikingos y dragones han sido enemigos acérrimos durante generaciones, Hipo se desmarca desafiando siglos de tradición cuando entabla amistad con Desdentao, un temido dragón Furia Nocturna. Su insólito vínculo revela la verdadera naturaleza de los dragones y desafía los cimientos de la sociedad vikinga.",
+    url: "__URL___"
+  },
+  {
+    titulo: "Lilo y Stitch (2025)",
+    imagen: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4oLLOAT55JhAoe73VliaSKFvEEr.jpg",
+    descripcion: "La conmovedora y divertidísima historia de una solitaria niña hawaiana y el extraterrestre fugitivo que la ayuda a reparar su desestructurada familia.",
+    url: "__URL___"
+  },
+  {
+    titulo: "Los Cuatro Fantásticos: Primeros pasos (2025)",
+    imagen: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ckfiXWGEMWrUP53cc6QyHijLlhl.jpg",
+    descripcion: "Con un mundo retrofuturista inspirado en los años 60 como telón de fondo, la Primera Familia de Marvel deberá hacer frente a su mayor desafío hasta la fecha. Obligados a buscar el equilibrio entre su papel de héroes y sus fuertes vínculos familiares, tendrán que defender la Tierra de un hambriento dios espacial llamado Galactus y su intrigante heraldo, Estela Plateada.",
+    url: "__URL___"
+  }
+];
+
+
+  // Elegir película aleatoria
+  var elegida = peliculas[Math.floor(Math.random() * peliculas.length)];
+
+ document.getElementById('dynamicHero').innerHTML = `
+  <img src="${elegida.imagen}" alt="${elegida.titulo}" class="w-full h-full object-cover" />
+  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent flex flex-col justify-end p-4">
+    <h2 class="text-white text-2xl md:text-3xl font-bold mb-4">${elegida.titulo}</h2>
+    <div class="flex space-x-4">
+      <a href="${elegida.url}" target="_blank" class="flex items-center bg-white text-black px-4 py-2 rounded hover:bg-gray-300 transition">
+        <i class="fas fa-play mr-2"></i> Ver ahora
+      </a>
+      <button
+        id="openModal"
+        class="flex items-center bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600 transition"
+      >
+        <i class="fas fa-info-circle mr-2"></i> Información
+      </button>
+    </div>
+  </div>
+`;
+
+
+  // Modal funcional
+  var modal = document.getElementById('infoModal');
+  var modalText = document.getElementById('modalDescription');
+
+  document.addEventListener('click', function (e) {
+    if (e.target.id === 'openModal' || e.target.closest('#openModal')) {
+      modal.classList.remove('hidden');
+      modalText.textContent = elegida.descripcion;
+    }
+    if (e.target.id === 'closeModal' || e.target === modal) {
+      modal.classList.add('hidden');
+    }
+  });
+</script>
+  </body>
+</html>
